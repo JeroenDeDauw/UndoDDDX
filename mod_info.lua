@@ -1,4 +1,4 @@
-name = "UndoDDDX"
+name = "UndoDDDX 1.0"
 uid = "11111111-8dde-416a-9d76-aaccaa171b00"
 version = 2
 copyright = "by EntropyWins"
