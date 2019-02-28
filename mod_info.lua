@@ -1,0 +1,10 @@
+name = "UndoDDDX v1.0"
+uid = "11111111-8dde-416a-9d76-aaccaa171b00"
+version = 1.0
+copyright = "by EntropyWins"
+description = "Enable RAS SACUs"
+author = "EntropyWins"
+selectable = true
+ui_only = true
+url = "https://github.com/JeroenDeDauw/UndoDDDX"
+icon = "/mods/UndoDDDX/icon.png"
