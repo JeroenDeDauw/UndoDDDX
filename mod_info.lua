@@ -1,6 +1,6 @@
-name = "UndoDDDX v1.1"
+name = "UndoDDDX"
 uid = "11111111-8dde-416a-9d76-aaccaa171b00"
-version = 1.1
+version = 2
 copyright = "by EntropyWins"
 description = "Enable RAS SACUs"
 author = "EntropyWins"
