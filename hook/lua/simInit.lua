@@ -1,11 +1,23 @@
 local OldBeginSession = BeginSession
 
+local function enableRas()
+    LOG("enableRas - start")
+
+    local ScenarioFramework = import('/lua/ScenarioFramework.lua')
+
+    for _, Army in ListArmies() do
+        ScenarioFramework.RemoveRestriction(Army, categories.ResourceAllocation)
+    end
+
+    LOG("enableRas - end")
+end
+
 function BeginSession()
     OldBeginSession()
-    ScenarioFramework.RemoveRestriction(Army, categories.ResourceAllocation)
 
     ForkThread(function()
+        enableRas()
         WaitSeconds(10)
-        ScenarioFramework.RemoveRestriction(Army, categories.ResourceAllocation)
+        enableRas()
     end)
 end
